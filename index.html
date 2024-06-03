@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body {
+        font: bold 11pt Arial;
+        background-color:rgb(0, 217, 255) (123, 238, 108, 0.884);
+        text-align: left;
+        display: grid;
+      }
+    </style>
+  </head>    
+  </body>
+  <form method="post" name="clientes_formulario" id="formulario">
+    <fieldset>
+      <p>Trabalhe conosco</p>
+      <div>
+        <label for="id_nome"
+          >Nome completo:
+          <input
+            type="text"
+            name="nome"
+            id="id_nome"
+            required
+            placeholder="Informe seu nome"
+            minlength="6"
+            maxlength="50"
+          />
+        
+      </label>
+
+
+      <label for="id_data">Data de nascimento:
+        <input type="date"  name="data" id="id_data">
+        <!--
+          <input type="datatetime-local" value="2007-05-03">
+          <input type="time">
+          <input type="week">
+          <input type="month">
+        -->
+       </label>
+       
+      <div>    
+      <p>Habilidades</p>
+      <label for="id_nome">HTML5:
+          <input type="checkbox" name="checkbox" value="html" id="id_html">
+      </label>    
+            
+      <label for="id_type">CSS3
+        <input type="checkbox" name="checkbox" value="css" id="id_css">
+      </label>
+
+      <label for="id_js">Javascript
+        <input type="checkbox" name="checkbox" value="js" id="id_js">
+      </label>
+    </div>
+    
+      <div>
+         <p>Vagas disponiveis:</p>
+         <label for="id_vagas_disponiveis">Dev Front-end JR:
+            <input type="radio" name="radio" value="Dev Front-end JR" id="id_Dev">
+         </label>
+
+         <label for="id_vagas_disponiveis">Designer UI/Ux:
+          <input type="radio" name="radio" value="" id="id_">
+         </label> 
+       </div>  
+
+
+       <div>
+        <label for="id_textarea">Cursos:
+          <textarea name="cursos_textarea"
+          id="id_textarea"
+          cols="30" rows="4"></textarea>
+        </label>  
+       </div>
+
+       <div>
+           </br>
+           <button type="submit">Enviar</button>
+       </div>    
+
+    </fieldset>
+  </form>
+  <script>
+    for(let i = 0; i < form.habilidades.length; i++){
+    if(form.habilidades[i].checked){
+    vetor[i] = form.habilidades[i].value;
+    console.log(form.habilidades[i].value)
+  }}
+
+  </script>
+  
+  <script>
+    let form = document.getElementById("form_2");
+    form.addEventListener("submit", (e)=>{
+      e.preventDefault();
+      
+      let nome = form.nome_completo.value;
+
+      console.log(nome)
+    });
+
+
+  </script>
+
+</html>
